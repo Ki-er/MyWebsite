@@ -1,0 +1,310 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/* Default CSS */
+
+html{
+    background-color: antiquewhite;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+p{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+ul{
+    color: black;
+}
+
+li{
+    color: black;
+}
+
+
+
+/* Navbar section */
+
+.nav {
+    width: 100%;
+    height: 65px;
+    position: relative;
+    line-height: 65px;
+    text-align: center;
+}
+
+.nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2.5rem;
+}
+
+.nav div.logo a:hover {
+    color: #008080;
+}
+
+.nav div.main_list {
+    height: 65px;
+    float: right;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 65px;
+    padding: 0;
+    padding-right: 3rem;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #000;
+    line-height: 65px;
+    font-size: 2.4rem;
+}
+
+.nav div.main_list ul li a:hover {
+    color: #008080;
+}
+
+.nav .main_list .active{
+    color: #008080;
+}
+
+#navbar{
+    font-size: 30px;
+}
+
+
+
+/* Home Sectiom*/
+
+#indextitle{
+    margin-left: 20%;
+    margin-top: 7%;
+    font-size: 80px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+#listofstuff{
+    list-style-type: none;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    line-height: 35px;
+}
+
+#hullcss{
+    color: springgreen;
+}
+
+#uniofhull{
+    color: #CE0058;
+}
+
+#rag{
+    color: #5D327B;
+}
+
+#spar{
+    color: red;
+}
+
+#courserep{
+    color: orangered;
+}
+
+#library{
+    color: #F6BA02;
+}
+
+#linkedin{
+    color: #0A66C2;
+}
+
+#github{
+    color: #24292E;
+}
+
+.slide-up {
+    height:100%;
+    overflow:hidden;
+    animation: 2s slide-up;
+    margin-top:0%;
+}
+
+@keyframes slide-up {
+    from {
+        margin-top: 100%;
+        height: 300%;
+    }
+
+    to {
+        margin-top: 0%;
+        height: 100%;
+    }
+}
+
+/*samsung S10+*/
+@media screen and (max-width: 1440px) {
+    #listofstuff{
+        font-size: 40px;
+        line-height: 45px;
+    }
+    p{
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .nav div.logo a {
+        text-decoration: none;
+        color: #000;
+        font-size: 2.9rem;
+    }
+
+    .nav div.main_list ul li a {
+        text-decoration: none;
+        color: #000;
+        line-height: 65px;
+        font-size: 2.9rem;
+    }
+}
+
+/*iPhone X, 11, 12*/
+@media screen and (max-width: 1125px) {
+    #listofstuff{
+        font-size: 35px;
+        line-height: 45px;
+    }
+    p{
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .nav div.logo a {
+        text-decoration: none;
+        color: #000;
+        line-height: 100px;
+
+        font-size: 3rem;
+    }
+
+    .nav div.main_list ul li a {
+        text-decoration: none;
+        color: #000;
+        line-height: 100px;
+        font-size: 3rem;
+    }
+}
+
+/*iPhone X, 11, 12*/
+@media screen and (max-width: 750px) {
+    #listofstuff{
+        font-size: 30px;
+        line-height: 45px;
+    }
+    p{
+        font-size: 30px;
+        line-height: 45px;
+    }
+
+    .nav div.logo a {
+        text-decoration: none;
+        color: #000;
+        line-height: 100px;
+        font-size: 2.8rem;
+    }
+
+    .nav div.main_list ul li a {
+        text-decoration: none;
+        color: #000;
+        line-height: 100px;
+        font-size: 2.8rem;
+    }
+}
+
+
+/*Post Page */
+
+#posttitle{
+    margin-left: 20%;
+    margin-top: 2%;
+    font-size: 80px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
